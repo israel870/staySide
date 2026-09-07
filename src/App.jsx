@@ -9,7 +9,7 @@ const App = () => {
     <>
     {/* <Signup/> */}
     <Routes>
-      <Route path="/signup" element={<Signup/>}/>
+      <Route path="/" element={<Signup/>}/>
       <Route path="/verify" element={<Verify/>}/>
 
       {/* Wild card */}
