@@ -37,9 +37,9 @@ const Signup = () => {
         .post(`/postuser`, values)
         .then((res) => {
           console.log(`Data sent successfully`, res.data);
-          // if (res.data.isSaved){
-          //   navigate('/verification', {state:{email:values.emailAddress}})
-          // }
+          if (res.data.isSaved){
+            navigate('/verify', {state:{email:values.emailAddress}})
+          }
         })
         .catch((error) => {
           console.log(error);
